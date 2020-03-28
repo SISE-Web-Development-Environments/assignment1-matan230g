@@ -1,7 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <title>Audi The Dog</title>
+  <!-- You can use open graph tags to customize link previews.
+  Learn more: https://developers.facebook.com/docs/sharing/webmasters -->
+<meta property="og:url"           content="https://sise-web-development-environments.github.io/assignment1-matan230g/" />
+<meta property="og:type"          content="website" />
+<meta property="og:title"         content="Audi The Dog" />
+<meta property="og:description"   content="I am Audi and this is my website" />
+<meta property="og:image"         content="https://sise-web-development-environments.github.io/assignment1-matan230g/images/audi%20(5).jpeg" />
 <link rel="stylesheet" type="text/css" href="style.css" />
+
 </head>
 <body>
 <div id="menu">
@@ -98,25 +107,28 @@
 <br/>
 <br/>
 <h3>my playlist</h3>
+<div class="playlist">
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLc2-GcAaY2db1t5jq7_5F741rJvVqbpQF" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
 <br/>
 <br/>
 <br/>
 </section>
 
 <section id="like" class="section">
+  <br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+  <div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v6.0"></script>
 
   <h3>give me a like</h3>
-    <!-- Load Facebook SDK for JavaScript -->
-    <div id="fb-root"></div>
-    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0"></script>
-  
-    <!-- Your like button code -->
-    <div class="fb-like" 
-      data-href="https://www.your-domain.com/your-page.html" 
-      data-layout="standard" 
-      data-action="like" 
-      data-show-faces="true">
-    </div>
+  <div class="fb-like" data-href="https://sise-web-development-environments.github.io/assignment1-matan230g/" data-width="" data-layout="standard" data-action="like" data-size="small" data-share="true"></div>
 <br/>
 <br/>
 <br/>
@@ -140,26 +152,16 @@
 </section>
 
 <section id="qrcoder" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
 <h3>scan my code </h3>
-<br/>
-<br/>
-<br/>
+<img  src="images/qrcode.png" >
 </section>
 
 <section id="spa" class="section">
@@ -173,16 +175,29 @@
 <br/>
 <br/>
 <br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<h3>ans</h3>
-<br/>
-<br/>
-<br/>
+
+<h3>
+  The difference between web 1.0, web 2.0 and web 3.0 
+</h3>
+<div>
+  <p>web 1.0 is static page the user only can read the page. the user can't comment, give feedback or add information.
+ <br> web 2.0 the user can share information, the age of social networks begin where eveyone can post blog post etc.<br>
+   web 3.0 the diffrent from the early versions, the information user get on the web 3.0 are more relvatn to him. </p>
+</div>
+<div>
+  <p>search restaurants use case<br>
+    web 1.0<br>
+    1.search "restaurants"<br>
+    2.get pages from the search engine that relvant to the query.<br>
+    (all users get the same result to the same query).
+    <br>
+    <br>
+    web 3.0<br>
+    1.search "restaurants"<br>
+    2.retrive the pages based on feedback of all the users that similar to the user <br>
+    3.get feedback from the choose of the user and store in the DataBase
+  </p>
+</div>
 </section>
 
 <section id="contact" class="section">
@@ -192,48 +207,37 @@
 <br/>
 <br/>
 <br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<h3>contact me</h3>
-<div class="container">
-    <label for="fname">First Name</label>
-    <input type="text" id="fname" name="firstname" placeholder="Your name..">
 
-    <label for="lname">Last Name</label>
-    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+<div class="contact-form">
+  <h1>Contact me</h1>
+  <div class="txt-box">
+    <label>Full Name:</label>
+    <input type="text" name="" value="" placeholder="Enter Your Name" id="name">
+  </div>
+  <div class="txt-box">
+    <label>Email:</label>
+    <input type="text" name="" value="" placeholder="Enter Your Email" id="email">
+  </div>
+  <div class="txt-box">
+    <label>Phone number:</label>
+    <input type="text" name="" value="" placeholder="Enter Your Phone number" id=phonenumber>
+  </div>
+  <div class="txt-box">
+    <label>Message: </label>
+    <textarea id="message"></textarea>
+   <div class="btn-send">
+    <button type="button" onclick="sendMail()">Send</button>
+   </div> 
+  </div>
 
-    <label for="country">Country</label>
-    <select id="country" name="country">
-      <option value="australia">Australia</option>
-      <option value="canada">Canada</option>
-      <option value="usa">USA</option>
-    </select>
 
-    <label for="subject">Subject</label>
-    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-
-    <input type="submit" value="Submit">
-</div>
-<textarea id="myText">
-  Lorem ipsum...
-</textarea>
-<button onclick="sendMail(); return false">Send</button>
 
 <script>function sendMail() {
-  var link = "mailto:me@example.com"
-           + "?cc=myCCaddress@example.com"
-           + "&subject=" + escape("This is my subject")
-           + "&body=" + escape(document.getElementById('myText').value)
+  var link = "mailto:matan230g@gmail.com"
+           + "?cc="+ document.getElementById("email").value
+           + "&subject=" +"Contact me from "+document.getElementById("name").value
+           + "&body=" + document.getElementById("message").value
   ;
-
   window.location.href = link;
 }</script>
 <br/>

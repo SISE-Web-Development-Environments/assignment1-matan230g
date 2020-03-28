@@ -1,7 +1,5 @@
 *{
-	margin: 5px;
-	padding: 2px;
-	box-sizing: border-box;
+	align: center;
 }
 #menu
 {
@@ -45,6 +43,50 @@ p{
 	display: flex;
 	flex-wrap: wrap;
 }
+.contact-form{
+ width: 85%;
+ max-width: 600px;
+  border-radius: 8px;
+ text-align: center;
+ background-color: white;
+}
+.contact-form h1{
+	margin-top: 0;
+	font-weight: 200;
+}
+.contact-form label{
+	color: white;
+}
+.txt-box{
+	border: 1px solid gray;
+	margin: 8px 0;
+	padding: 12px 18px;
+	border-radius: 8px;
+}
+.txt-box label{
+	display: block;
+	text-align: left;
+	text-transform: uppercase;
+    color: black;
+	font-size: 14px;
+}
+.txt-box input, .txt-box textarea{
+	width: 100%;
+	border: none;
+	background: none;
+	outline: none;
+	font-size: 18px;
+	margin-top: 6px;
+}
+.fb-like{
+	border: solid gray 1px;
+	background-color: white;
+	height: 75px;
+	width: 450px;
+	vertical-align: bottom;
+	padding: 30px;
+}
+
 
 
 
