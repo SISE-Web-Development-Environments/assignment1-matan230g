@@ -1,6 +1,4 @@
-*{
-	align: center;
-}
+
 #menu
 {
 	position: fixed;
@@ -86,6 +84,14 @@ p{
 	vertical-align: bottom;
 	padding: 30px;
 }
+.emojionearea-standalone {
+	float: right;
+  }
+  .span6 {
+	float: left;
+	width: 48%;
+	padding: 1%;
+  }
 
 
 
