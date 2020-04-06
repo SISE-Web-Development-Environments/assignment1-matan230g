@@ -1,9 +1,12 @@
+section{
+	padding-left: 2%;
 
+}
 #menu
 {
 	position: fixed;
 	display: flex;
-	background-color: white;
+	background-color: rgb(41, 38, 38);
 	justify-content: space-around;
 	align-items: center;
 	min-height: 8vh;
@@ -11,10 +14,11 @@
 	height: 35px;
 }
 body {
-	background: linear-gradient(rgba(43,55,96,1),rgba(11,16,35,1));
+	background: linear-gradient(rgba(43,55,96,1),rgb(57, 66, 102,1));
 }
 h3{
 	color: white;
+	font-size:38px ;
 }
 p{
 	color: white;
@@ -28,6 +32,8 @@ p{
 #menu a{
 	font-weight: bold;
 	text-decoration: none;
+	color: azure;
+	font-size: 24px;
 }
 .img-responsive{
 	flex: 33.33%;
